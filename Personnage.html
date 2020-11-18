@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        let myJSON = '{"nom" : "Klad","classe" : "geurrier","age" : 28,"armes" : [ "épée", "bouclier" ] }';
+        let myNewJSON = JSON.parse(myJSON);
+        // logs a JavaScript object, not a string
+        console.log(myNewJSON);
+
+        console.log(myNewJSON.nom); 
+        console.log(myNewJSON.classe); 
+        console.log(myNewJSON.age); 
+        console.log(myNewJSON.armes);
+        document.body.innerHTML = "Le personnage s'appelle " + myNewJSON.nom + ", il est de classe " + myNewJSON.classe + " et il possède une " + myNewJSON.armes[0] + " et un " + myNewJSON.armes[1];
+
+    </script>
+
+</body>
+</html>
